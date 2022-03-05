@@ -170,19 +170,17 @@ void draw(){
   }
   if(camPlane){
     camera(width/2.0-pCamX, height/2.0-pCamY, pCamZ+800, width/2.0-pCamX, height/2.0-pCamY, 0, 0, 1, 0);
-    if(keyPressed){
-      if(key=='w')pCamZ-=5;
-      if(key=='a')pCamX+=5;
-      if(key=='s')pCamZ+=5;
-      if(key=='d')pCamX-=5;
+      if(key=='w')pCamZ-=3.5;
+      if(key=='a')pCamX+=3.5;
+      if(key=='s')pCamZ+=3.5;
+      if(key=='d')pCamX-=3.5;
       if(key=='r'){
         pCamX=0;
         pCamY=0;
         pCamZ=0;
       }
-      if(keyCode==UP)pCamY+=5;
-      if(keyCode==DOWN)pCamY-=5;
-    }
+      if(keyCode==UP)pCamY+=3.5;
+      if(keyCode==DOWN)pCamY-=3.5;
   }
   visualizePlanets();
 }
