@@ -169,6 +169,10 @@ void draw(){
     }
   }
   if(camPlane){
+    text("Pulsa ESPACIO para entrar en modo general", 30,750,-250);
+    text("Pulsa W,A,S,D para avanzar, izquierda, derecha, retroceder", 30,790,-250);
+    text("Pulsa flechas UP Y DOWN para ir arriba y abajo", 30,830,-250);
+    text("Pulsa R para reubicar nave", 30,870,-250);
     camera(width/2.0-pCamX, height/2.0-pCamY, pCamZ+800, width/2.0-pCamX, height/2.0-pCamY, 0, 0, 1, 0);
       if(key=='w')pCamZ-=3.5;
       if(key=='a')pCamX+=3.5;
@@ -207,7 +211,12 @@ void mousePressed(){
 
 void keyPressed(){
   if(key==' '){ // activate/deactivate plane camera
-    if(camPlane) camPlane=false;
+    if(camPlane){ 
+      camPlane=false;
+      pCamX=0;
+      pCamY=0;
+      pCamZ=0;  
+}
     else if(!camPlane){ // both planets and satellites will be shown if we are in the plane
       camPlane=true;
       plan=true;
