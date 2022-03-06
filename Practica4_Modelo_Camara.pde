@@ -169,10 +169,10 @@ void draw(){
     }
   }
   if(camPlane){
-    text("Pulsa ESPACIO para entrar en modo general", 30,750,-250);
-    text("Pulsa W,A,S,D para avanzar, izquierda, derecha, retroceder", 30,790,-250);
-    text("Pulsa flechas UP Y DOWN para ir arriba y abajo", 30,830,-250);
-    text("Pulsa R para reubicar nave", 30,870,-250);
+    text("ESPACIO para entrar en modo general", 30,750,-250);
+    text("W,A,S,D para avanzar, izquierda, derecha, retroceder", 30,790,-250);
+    text("Flechas UP Y DOWN para ir arriba y abajo", 30,830,-250);
+    text("R para reubicar nave", 30,870,-250);
     camera(width/2.0-pCamX, height/2.0-pCamY, pCamZ+800, width/2.0-pCamX, height/2.0-pCamY, 0, 0, 1, 0);
       if(key=='w')pCamZ-=3.5;
       if(key=='a')pCamX+=3.5;
