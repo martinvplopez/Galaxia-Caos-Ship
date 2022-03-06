@@ -18,7 +18,7 @@ ___
 - ##### **Información**: *Botones Mostrar/Ocultar*, dispone de un buen tamaño, al clicar cambia su estado y a su vez el texto de los cuerpos celestes visibles cambia para aportar un feedback e información extra al usuario. 
 - ##### **Color**: Blanco para resaltar de la mejor forma posible 
 - ##### **Texturas**: Se han seleccionado texturas de elementos naturales y primitivos, por ejemplo, arena, agua o roca, para resaltar la idea de sistema hostil y no habitado.
-- ##### **Controles**: *ESPACIO* para activar/desactivar modo nave, y, en el modo nave, las teclas [*W*],[*A*],[*S*],[*D*], [*ARROW-UP*] Y [*ARROW-DOWN*] para el movimiento de la posición de la misma: avanzar, izquierda, retroceder, derecha, subir, bajar. Se han elegido estos controles porque son muy intuitivos.
+- ##### **Controles**: *ESPACIO* para activar/desactivar modo nave, y, en el modo nave, las teclas [*W*],[*A*],[*S*],[*D*], [*ARROW-UP*] Y [*ARROW-DOWN*] para el movimiento de la posición de la misma: avanzar, izquierda, retroceder, derecha, subir, bajar. Se han elegido estos controles porque son muy intuitivos. [*R*], tecla de reseteo de la nave, control al usuario y tolerancia a errores.
 
 #### Posibles modificaciones
 ##### El poder seleccionar un sólo objeto y ver sus características ( oxígeno, Co2, etcétera).
