@@ -172,19 +172,21 @@ void draw(){
     text("ESPACIO para entrar en modo general", 30,750,-250);
     text("W,A,S,D para avanzar, izquierda, derecha, retroceder", 30,790,-250);
     text("Flechas UP Y DOWN para ir arriba y abajo", 30,830,-250);
-    text("R para reubicar nave", 30,870,-250);
+    text("Cualquier otra tecla para la nave", 30,870,-250);
+    text("R para reubicar nave", 30,910,-250);
+
     camera(width/2.0-pCamX, height/2.0-pCamY, pCamZ+800, width/2.0-pCamX, height/2.0-pCamY, 0, 0, 1, 0);
-      if(key=='w')pCamZ-=3.5;
-      if(key=='a')pCamX+=3.5;
-      if(key=='s')pCamZ+=3.5;
-      if(key=='d')pCamX-=3.5;
-      if(key=='r'){
-        pCamX=0;
-        pCamY=0;
-        pCamZ=0;
-      }
-      if(keyCode==UP)pCamY+=3.5;
-      if(keyCode==DOWN)pCamY-=3.5;
+    if(key=='w')pCamZ-=3.5;
+    else if(key=='a')pCamX+=3.5;
+    else if(key=='s')pCamZ+=3.5;
+    else if(key=='d')pCamX-=3.5;
+    else if(key=='r'){
+      pCamX=0;
+      pCamY=0;
+      pCamZ=0;
+    }
+    else if(keyCode==UP)pCamY+=3.5;
+    else if(keyCode==DOWN)pCamY-=3.5;
   }
   visualizePlanets();
 }
